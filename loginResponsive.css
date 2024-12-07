@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loginSection{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('icons/bg\ half.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.background{
+    display: flex;
+}
+
+
+.containerTitle-Logo{
+    flex: 1; 
+    padding: 20px;
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 50%;
+}
+
+.logo-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.logo-container img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.textText{
+    display: grid;
+    place-items: center;
+}
+
+.titleText p{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.loginSectionContent{
+    background-color: #fff;
+    flex: 1; 
+}
+
+.loginSectionContent h2{
+    margin-top: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.loginSectionContainer{
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+label[for="password"] {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+label[for="username"] {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
+
+.forgot-password{
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+.forgot-password a{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color:#5F775B;
+    text-decoration: underline;
+}
+
+.input-group-prepend, .input-group-append {
+    cursor: pointer;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border: none;
+}
+
+.form-check-label{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-control[type="text"] {
+    width: 100%;   
+    height: 40px; 
+    font-size: 16px; 
+}
+
+.form-control {
+    border-radius: 12px; 
+    border: 1px solid #ced4da; 
+    padding: 9px;
+    font-size: 16px; 
+}
+
+.form-control:hover {
+    border-color: #aaa; 
+}
+
+.form-control:focus {
+    border-color: #748C70;
+    box-shadow: 0 0 0 0.2rem rgb(144, 152, 143);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.custom-btn {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #748C70;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 0 80px;
+    text-decoration: none;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+    background-color: #5F775B;
+    color: #FFFFFF;
+    border: none;
+    text-decoration: none;
+}
+
+.register-now{
+    margin-top: 60px;
+    margin-left: 30%;
+    margin-right: 20px;
+}
+
+.register-now text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.register-now p{
+    color: black;
+    font-weight: 350;
+    text-decoration: none;
+}
+
+.register-now a{
+        font-weight: 500;
+        cursor: pointer;
+        color:#5F775B;
+        text-decoration: underline;
+}

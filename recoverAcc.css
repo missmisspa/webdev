@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    width: 263px;
+    height: 116px;
+    left: 230px;
+    top: 170px;
+    position: absolute;
+}
+
+.LegazpiLogo {
+    width: 116px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.BrgyLogo {
+    width: 116px;
+    height: 114px;
+    left: 150px;
+    top: 0px;
+    position: absolute;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    width: 600px;
+    height: 252px;
+    left: 50px;
+    top: 305px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.titleTxt {
+    font-family: 'Montserrat', sans-serif;
+    width: 600px;
+    height: 244px;
+    text-align: center;
+}
+
+
+.mainLogin {
+    width: 800px;
+    height: 100%;
+    left: calc(100% - 800px);
+    top: 0;
+    background: white;
+    position: absolute;
+}
+
+
+form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 51px;
+    display: flex;
+    margin-top: 180px;
+    margin-left: 60px;
+}
+
+.loginTop {
+    width: 538px;
+    height: 35px;
+    text-align: center;
+    color: #19191B;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 95px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    margin-left: -25px;
+}
+
+.newPassInputField input::placeholder,
+.confirmInputField input::placeholder{
+    color:  #ccc; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px; 
+    font-weight: 500; 
+}
+.newPass{
+    right: 100px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -5px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    color: #3B3D41;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 15px;
+}
+.confirmPass{
+    right: 100px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    color: #3B3D41;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 15px;
+    top: -40px;
+}
+input[type="password"] {
+    width: 550px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+input[type="password"] {
+    width: 600px;
+    height: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: white;
+    border-radius: 12px;
+    border: 2px #EAEBEC solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    display: inline-flex;
+    margin-left: 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20px;
+    left: 72.5%;
+    top: 500px;
+    transform: translateX(-50%);
+}
+
+.btn-back{
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    width: 120px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: -200px;
+    background-color: #999BA1;
+}
+.btn-back:hover{
+    background-color: #88898c;
+}
+.btn-continue {
+    margin-left: -80px;
+    background-color: #748C70;
+    margin-right: -250px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.btn-continue:hover {
+    background-color: #5e785e;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.popup-content button {
+    background-color: #748C70;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.popup-content button:hover {
+    background-color: #5e785e;
+    font-family: 'Montserrat', sans-serif;
+}
