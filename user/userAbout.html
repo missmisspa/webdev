@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barangay Monitoring System - Dashboard</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="userAbout.css">
+</head>
+<body>
+<div id="sidebar">
+    <div class="text-center mb-4">
+        <img src="Legazpi-LOGO.png" alt="Logo 1" class="img-fluid mb-2">
+        <img src="BRGY LOGO.png" alt="Logo 2" class="img-fluid mb-2">
+        <h4 class="text">Barangay Monitoring System</h4>
+    </div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="userDashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="userProfile.php"><i class="fas fa-user"></i> Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="userFullDisclosureBoard.html"><i class="fas fa-clipboard-list"></i> Full Disclosure Board</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="userOrgFlowchart.html"><i class="fas fa-sitemap"></i> Organizational Flowchart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="userAbout.html"><i class="fas fa-info-circle"></i> About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="confirmLogout()" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <h2>About Barangay 43-Tamaoyan</h2>
+    <p>
+        Welcome to Barangay 43-Tamaoyan, a vibrant community nestled in the heart of Legazpi City, Albay, Philippines. 
+        Formerly known as Barangay 67, our barangay has a rich history and a diverse population, contributing to the dynamic 
+        tapestry of Legazpi.
+    </p>
+    <h3>Demographics</h3>
+    <p>
+        With a population of 2,003 as of the 2020 Census, Barangay 43-Tamaoyan is home to a thriving community of individuals and families. 
+        Over the years, our population has steadily grown, reflecting a positive growth rate of 4.27% from 2015 to 2020. 
+        Our households, numbering 361 in total, boast an average size of 4.55 members, fostering a sense of kinship and camaraderie among residents.
+    </p>
+    <h3>Population Distribution</h3>
+    <p>
+        Our community is characterized by a diverse age distribution, with each age group contributing to the vibrancy of our barangay. 
+        From the energetic youth aged 5 to 9, comprising 11.21% of our population, to the wise seniors aged 80 and over, each member 
+        of our community adds value and uniqueness to Barangay 43-Tamaoyan.
+    </p>
+    <h3>Location</h3>
+    <p>
+        Nestled in the scenic landscapes of Luzon, Barangay 43-Tamaoyan enjoys a strategic location, with coordinates approximately 13.1731 latitude and 123.7406 longitude. 
+        Situated at an elevation of 23.8 meters above mean sea level, our barangay offers breathtaking views and easy access to the natural beauty of Albay.
+    </p>
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.8182904504724!2d123.74282235!3d13.17385425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a101102e5a76c3%3A0x2d9396628f228394!2sTamaoyan%2C%20Legazpi%20City%2C%20Albay!5e0!3m2!1sen!2sph!4v1714696719864!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <p>Are you sure you want to logout?</p>
+        <button id="cancelButton" onclick="hidePopup()">Cancel</button>
+        <a href="../logout.php"><button id="logoutBtn" onclick="logout()">Logout</button></a>
+    </div>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup').classList.add('active');
+    }
+
+    function hidePopup() {
+        document.getElementById('popup').classList.remove('active');
+    }
+
+    function confirmLogout() {
+        showPopup();
+    }
+</script>  
+
+<!--form error checking -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+</html>
+    
